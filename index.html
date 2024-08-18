@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengambilan Foto Twibbon</title>
+    <link rel="icon" href="aset/svg/logo.png" type="image/png">
+    <link rel="stylesheet" href="aset/styles.css">
+    <link rel="stylesheet" href="aset/warning.css">
+</head>
+<body>
+    <div class="desktop-warning">
+        Halaman ini hanya dapat diakses melalui perangkat mobile.
+    </div>
+
+    <div class="mobile-only">
+        <header>
+            <h1>Pengambilan Foto Twibbon BP24</h1>
+        </header>
+
+        <div style="max-width: 900px; margin: 20px auto 30px auto; image-resolution: 1080px;">
+            <img src="aset/welcome/WELCOME BP24.png" alt="">
+        </div>
+        
+        <div class="container">
+            <form id="photoForm">
+                <label for="studentName">Masukkan Username Instagram:</label>
+                <input type="text" id="studentName" placeholder="@" required>
+                <button type="button" onclick="showPhoto()">Tampilkan Foto</button>
+            </form>        
+            <div id="photoDisplay" class="photo-container">
+                <img id="studentPhoto" src="" alt="Foto Mahasiswa">
+                <a id="downloadButton" href="#" download class="download-button">Unduh Foto</a>
+            </div>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+
+        <div class="container_2">
+            <h3>Bagi yang belum upload fotonya, silahkan tekan dan upload pada tombol dibawah ini</h3>
+            <button onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfJftgTDU4WimmP9kxrZSsz8aUY7Y4uTVTNc0GmAxdRB6Y5lA/viewform?usp=sharing'">
+                Upload Foto
+            </button>
+            <p>Note: Jika sudah berhasil upload fotonya, tunggu untuk fotonya diproses, dan lakukan pengecekan 1x24 jam.</p>
+            <p>Batas upload foto adalah tanggal 30 Agustus 2024, jika lewat maka link tidak dapat menerima gambar lagi.</p>
+        </div>
+        
+        <footer>
+            <h2>Bantuan</h2>
+            <form id="helpForm">
+                <label for="helpName">Nama:</label>
+                <input type="text" id="helpName" placeholder="Masukkan nama Anda" required>
+
+                <label for="helpComplaint">Keluhan:</label>
+                <textarea id="helpComplaint" placeholder="Masukkan keluhan Anda" required></textarea>
+
+                <label for="helpEmail">Email:</label>
+                <input type="email" id="helpEmail" placeholder="Masukkan email Anda" required>
+
+                <button type="submit">Kirim</button>
+            </form>
+            <p>&copy; 2024 XENZA DIGITAL GROUP. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <noscript>
+        <p>JavaScript harus diaktifkan untuk melihat konten ini.</p>
+    </noscript>
+    
+    <script src="script/script.js"></script>
+</body>
+</html>
